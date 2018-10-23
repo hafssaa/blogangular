@@ -1,0 +1,36 @@
+<div class="container">
+<h1>Post</h1>
+<ul class="list-group" style="margin-top: 50px">
+
+	 
+	
+	  <li class="list-group-item"
+	  [ngStyle]="{background: getColor2()}">
+	  	<div style="float:left" >Mon 1er Poste</div>
+	  	<div style="float:right" >{{ created_at | date:'medium' }}</div> <br>
+	  	<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux </p>
+	  	<button (click)="compterL2()">love it</button>	  	<button (click)="compterD2()" style="margin-left: 20px">Don't love it</button>
+
+
+	  </li>
+	  <li class="list-group-item"
+	  [ngStyle]="{background: getColor3()}">
+	  	<div style="float:left" >Mon 2ème Poste</div>
+	  	<div style="float:right" >{{ created_at | date:'medium' }}</div> <br>
+	  	<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux </p>
+	  	<button (click)="compterL3()">love it</button>	  	<button (click)="compterD3()" style="margin-left: 20px">Don't love it</button>
+
+
+	  </li>
+	 
+	  <li class="list-group-item"
+	  [ngStyle]="{background: getColor1()}">
+	  		  	  	  	
+	  	<div style="float:left" >Mon 3ème Poste</div>
+	  	<div style="float:right" >{{ created_at | date:'medium' }}</div> <br>
+	  	<p> Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux {{ loveits1() }} </p>
+	  	<button (click)="compterL1()">love it</button>	  	<button (click)="compterD1()" style="margin-left: 20px">Don't love it</button>
+
+	  </li>
+</ul>
+</div>
